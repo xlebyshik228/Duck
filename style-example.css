@@ -1,0 +1,100 @@
+body {
+    /* Сброс стандартых стилей */
+    margin: 0;
+}
+
+.nav {
+    padding: 15px;
+    background-color: rgb(38, 0, 255);
+    color: white;
+}
+
+.nav-ul {
+    /* Сброс стандартых стилей */
+    margin: 0;
+    list-style: none;
+    padding: 0;
+
+    /* Выстраивание элементов в строку */
+    display: flex;
+}
+
+.nav-li {
+    /* Отступ сверху и снизу 0, справа и слева 10px */
+    padding: 0 1vw;
+    background-color: white;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.nav-li:hover {
+    color: azure;
+    
+    /* Подчеркивание текста при наведении */
+    text-decoration: underline;
+}
+
+.row {
+    display: flex;
+}
+
+.welcome-text {
+    padding: 20vw;
+}
+
+.banner-img {
+    /* Задаем максимальную высоту картинки. Если картинка будет меньше, то она может занимать меньший размер */
+    width: 40vw;
+
+
+    /* Задавать и высоту, и ширину картинке не нужно, потому что она сплющится, если соотношение сторон будет нарушено. Достаточно одного параметра */
+    /* Кстати, единицы измереия vw и vh разные. v-width и v-height . для ширины vw, для высоты vh */
+    /* погуглите, чтобы узнать подробнее */
+}
+
+.buttons {
+    display: flex;
+
+    /* Отступ, чтобы кнопки не прилепали к тексту */
+    padding-top: 2vh;
+}
+
+.button {
+    /* Тег a это строчный тег, эти свойством сы велим ему вести себя как блочный.
+        Чтобы почувтсвовать разницу, уберите эту строку и сделайте окно браузера очень узким */
+    display: block;
+
+    background-color: rgb(95, 5, 5);
+    color: white;
+    text-decoration: none;
+    padding: 1vw 2vw;
+    margin-right: 1vw;
+}
+
+.button-2 {
+    background-color: rgb(0, 0, 0);
+}
+
+.button:hover {
+    color: azure;
+    
+    /* Подчеркивание текста при наведении */
+    text-decoration: underline;
+}
+
+.card {
+    background-color: linen;
+    margin: 3vw;
+    padding: 3vw;
+}
+
+.card-flex {
+    /* Выравнивание всех элементов в столбик */
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    background-color: blueviolet;
+    padding: 30px;
+}
